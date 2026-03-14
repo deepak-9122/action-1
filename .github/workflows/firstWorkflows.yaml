@@ -6,14 +6,12 @@ jobs:
   first-workflows:
     runs-on: ubuntu-latest
     steps:
-      - name: print 1st step
-        run: echo "Hello First Workflow Run"
-      
       - name: checkout repo
         uses: actions/checkout@v6
 
-      - name: list file
-        run: ls -ltr
-
-      - name: Read Readme File
-        run: cat README.md 
+      - name: print and read
+        run: |
+          echo "Hello First Workflow Run"
+          ls -ltr
+          cat README.md 
+          |
