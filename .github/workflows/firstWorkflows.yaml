@@ -9,9 +9,10 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v6
 
+      - name: add permission
+        run: chmod +x printandread.sh
+
       - name: print and read
-        run: |
-          echo "Hello First Workflow Run"
-          ls -ltrah
-          cat README.md 
+        run: ./printandread.sh
+
           
