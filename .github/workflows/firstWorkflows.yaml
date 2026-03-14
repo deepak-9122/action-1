@@ -1,11 +1,10 @@
-name: My Frist Workflows
+name: My First Workflows
 
 on: push
 
-jobs: 
-    name: first workflows
+jobs:
+  first-workflows:
     runs-on: ubuntu-latest
-
     steps:
-        -name: print 1st step
-         run: echo "Hello"
+      - name: print 1st step
+        run: echo "Hello"
