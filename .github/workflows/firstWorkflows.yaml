@@ -12,6 +12,6 @@ jobs:
       - name: print and read
         run: |
           echo "Hello First Workflow Run"
-          ls -ltra
+          ls -ltrah
           cat README.md 
           
