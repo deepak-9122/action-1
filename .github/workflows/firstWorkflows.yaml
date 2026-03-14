@@ -7,4 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print 1st step
-        run: echo "Hello"
+        run: echo "Hello First Workflow Run"
+      
+      - name: list file
+        run: ls -ltr
+
+      - name: Read Readme File
+        run: cat README.md 
